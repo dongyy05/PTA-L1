@@ -1,0 +1,25 @@
+#include<iostream>
+#include<vector>
+#include<string>
+using namespace std;
+
+int main()
+{
+  vector<string> num;
+  string arr[10] = {"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"};
+  string n;
+  cin >> n;
+  
+  int sum = 0;
+  for(auto& nums:n)
+    {
+      sum += nums - '0';
+    }
+  while(sum)
+    {
+      if(sum > 9)
+      sum /= 10;
+      cout << arr[sum] << " ";
+    }
+}
+  

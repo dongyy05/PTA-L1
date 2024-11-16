@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+
+struct stu
+{
+  string name[n];
+  string num[n];
+  int score[n];
+};
+
+int main()
+{}
